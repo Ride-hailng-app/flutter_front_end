@@ -23,9 +23,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_dialogs/flutter_dialogs.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
+import "constants.dart";
 
 //late LocationData loco_pos;
 late var screenSize;
+
 late String fak_token;
 late FirebaseApp fapp;
 late var screenWidth; 
@@ -221,13 +223,9 @@ void main() async {
   prefs.setStringList("drivers", drivers_list);
   prefs.setBool("read_status",false);
   await initFB();
-  /*
-  5cl8F_qB-xPaldn9OsdP3PtUBJQYMdlOHu4dRkAtOCvZ7Y9zBb8XA3fguX47fGDiklGLH2EipWePDay6J6GLlg
-  hypertrackSdk = await HyperTrack.initialize("n7HizHArPLQKNdZAFUwLrlID2CoZw1WSwsN5qKidiiFhGL5uZg3nRU_K7RdNswcGbcLcASsBj6LvwAH7_UZG9A",automaticallyRequestPermissions: true).onError((error, stackTrace) {
-    throw Exception(error);
-  });*/
+  
 
-  hypertrackSdk = await HyperTrack.initialize("5cl8F_qB-xPaldn9OsdP3PtUBJQYMdlOHu4dRkAtOCvZ7Y9zBb8XA3fguX47fGDiklGLH2EipWePDay6J6GLlg",automaticallyRequestPermissions: true).onError((error, stackTrace) {
+  hypertrackSdk = await HyperTrack.initialize(HYPERTRACK_TOKEN,automaticallyRequestPermissions: true).onError((error, stackTrace) {
     throw Exception(error);
   });
   dev_id = await hypertrackSdk.deviceId;

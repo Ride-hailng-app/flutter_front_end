@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "193888611770",
+    "project_id": "wevuuge-ak256",
+    "storage_bucket": "wevuuge-ak256.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193888611770:android:23cf1a18957946fe6e4183",
+        "android_client_info": {
+          "package_name": "com.example.fl_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193888611770-hl6lkjjjs8e6vt1j97j3v4turm61qa9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9SFAdDutYB0vv6m0jMTU2slczvT-NiSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193888611770-hl6lkjjjs8e6vt1j97j3v4turm61qa9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
